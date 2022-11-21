@@ -58,7 +58,7 @@ const Edit = () => {
         <div className='mx-[3rem] my-12'>
           <Link
             to='/dashboard'
-            className='pointer text-white bg-sky-900 border-transparent rounded-md py-[0.375rem] px-[0.75rem] shadow-md capitalize hover:bg-gray-200 hover:text-sky-700'
+            className='cursor-pointer text-center text-white bg-sky-700 border-transparent rounded-md py-[0.375rem] px-[0.75rem] shadow-md capitalize inline-block md:w-fit w-[100%]'
           >
             Dashboard
           </Link>

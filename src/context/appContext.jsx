@@ -104,7 +104,7 @@ const AppProvider = ({ children }) => {
     setLoading()
     try {
       const { data } = await axios.get(`/items/${itemId}`)
-      dispatch({ type: FETCH_SINGLE_ITEM_SUCCESS, payload: data.item })
+      dispatch({ type: FETCH_SINGLE_ITEM_SUCCESS, payload: data.singleItem })
     } catch (error) {
       dispatch({ FETCH_SINGLE_ITEM_ERROR })
     }
