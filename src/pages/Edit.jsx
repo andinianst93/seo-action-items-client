@@ -42,8 +42,6 @@ const Edit = () => {
     const { item, recommendation, status, priority } = values
     if (item && recommendation) {
       editSingleItem(id, { item, recommendation, status, priority })
-    } else {
-      editSingleItem(id, { item, recommendation, status, priority })
     }
   }
   if (isLoading && !editItem) {
