@@ -35,7 +35,7 @@ const Register = () => {
         <div className='mx-auto max-w-[1120px] px-4 sm:px-6 xl:max-w-5xl xl:px-0 min-h-[100vh] grid items-center'>
           <div>
             {showAlert && (
-              <div className='py-[0.375rem] px-[0.75rem] m-auto border-transparent rounded-md w-[500px] max-w-[1120px] text-center capitalize text-red-800 bg-red-200'>
+              <div className='py-[0.375rem] px-[0.75rem] m-auto border-transparent rounded-md md:w-[35vw] mb-2 max-w-[1120px] text-center capitalize text-red-800 bg-red-200'>
                 there was an error, please try again
               </div>
             )}
