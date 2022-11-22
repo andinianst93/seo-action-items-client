@@ -10,7 +10,7 @@ const Home = () => {
       {user && <Navigate to='/dashboard' />}
 
       <div className='mx-auto max-w-[1120px] px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
-        <div className='w-[500px] m-0 h-[6rem] flex items-center'>
+        <div className='m-0 h-[6rem] flex items-center'>
           <img
             src={code}
             alt='seo app'
@@ -37,7 +37,11 @@ const Home = () => {
               Login/Register
             </Link>
           </div>
-          <img src={main1} alt='seo tracking app' className='lg-block' />
+          <img
+            src={main1}
+            alt='seo tracking app'
+            className='lg:block w-[450px]'
+          />
         </div>
       </div>
     </>
