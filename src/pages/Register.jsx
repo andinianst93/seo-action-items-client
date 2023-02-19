@@ -44,15 +44,8 @@ const Register = () => {
               onSubmit={onSubmit}
             >
               <div className='h-4 flex items-center justify-center mb-8'>
-                <img
-                  src={code}
-                  alt='seo app'
-                  className='w-[40px] block object-cover'
-                />
                 <h2 className='ml-2 text-2xl font-bold'>
-                  <span className='text-amber-500'>SEO</span>{' '}
-                  <span className='text-gray-900'>DIGI</span>
-                  <span className='text-sky-700'>ADN</span>
+                  <span className='text-sky-700'>Welcome!</span>
                 </h2>
               </div>
               <h4 className='capitalize text-center font-medium text-xl'>

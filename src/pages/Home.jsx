@@ -10,18 +10,7 @@ const Home = () => {
       {user && <Navigate to='/dashboard' />}
 
       <div className='mx-auto max-w-[1120px] px-4 sm:px-6 xl:max-w-5xl xl:px-0'>
-        <div className='m-0 h-[6rem] flex items-center'>
-          <img
-            src={code}
-            alt='seo app'
-            className='w-[50px] block object-cover'
-          />
-          <h2 className='ml-2 text-3xl font-bold'>
-            <span className='text-amber-500'>SEO</span>{' '}
-            <span className='text-gray-900'>DIGI</span>
-            <span className='text-sky-700'>ADN</span>
-          </h2>
-        </div>
+        <div className='m-0 h-[6rem] flex items-center'></div>
         <div className='grid items-center min-h-[calc(100vh-6rem)] lg:grid-cols-2 lg:gap-[6rem]'>
           <div>
             <h1 className='font-bold text-4xl mb-4'>SEO Items Tracking App</h1>

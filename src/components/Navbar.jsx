@@ -1,5 +1,4 @@
 import React from 'react'
-import code from '../assets/code.svg'
 import { FaUserCircle, FaCaretDown } from 'react-icons/fa'
 import { useGlobalContext } from '../context/appContext'
 
@@ -9,10 +8,8 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between'>
       <div className='w-[500px] m-0 h-[6rem] flex items-center'>
-        <img src={code} alt='digiadn' className='w-[30px]' />
         <h2 className='ml-2 text-2xl font-bold'>
           <span className='text-amber-500'>SEO</span>{' '}
-          <span className='text-gray-900'>DIGI</span>
           <span className='text-sky-700'>ADN</span>
         </h2>
       </div>
