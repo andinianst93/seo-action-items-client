@@ -15,7 +15,7 @@ const FormRow = ({
           {name}
         </label>
       )}
-      <input
+      <textarea
         type={type}
         value={value}
         name={name}
