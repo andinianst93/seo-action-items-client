@@ -20,7 +20,7 @@ const Home = () => {
               improvement.
             </p>
             <Link
-              to='/register'
+              to='/account'
               className='cursor-pointer text-white text-[1.25rem] bg-sky-800 border-transparent rounded-md py-[0.5rem] px-[1.25rem] shadow-md capitalize inline-block'
             >
               Login/Register

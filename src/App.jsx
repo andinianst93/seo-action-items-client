@@ -1,7 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Register, Home, Dashboard, Edit, Error, PrivateRoute } from './pages'
+import TagManager from 'react-gtm-module'
+
 const App = () => {
+  const tagManagerArgs = {
+    gtmId: 'GTM-5SMRF56',
+  }
+
+  TagManager.initialize(tagManagerArgs)
   return (
     <BrowserRouter>
       <Routes>
@@ -14,7 +21,7 @@ const App = () => {
             </PrivateRoute>
           }
         ></Route>
-        <Route path='/register' element={<Register />}></Route>
+        <Route path='/account' element={<Register />}></Route>
         <Route path='/edit/:id' element={<Edit />}></Route>
         <Route path='*' element={<Error />}></Route>
       </Routes>

@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom'
 import code from '../assets/code.svg'
 import FormRowS from '../components/FormRowS'
 import SectionContainer from '../components/SectionContainer'
-
+import { Link } from 'react-router-dom'
 const Register = () => {
   const [values, setValues] = useState({
     name: '',
@@ -39,6 +39,14 @@ const Register = () => {
                 there was an error, please try again
               </div>
             )}
+            <div className='max-w-[1120px] md:w-[35vw] py-8 mx-auto my-auto'>
+              <Link
+                to='/'
+                className='text-blue text-base font-thin text-sky-900 flex items-center'
+              >
+                Back to Home
+              </Link>
+            </div>
             <form
               className='max-w-[1120px] md:w-[35vw] bg-white rounded-md shadow-md p-[2.5rem] mx-auto my-auto'
               onSubmit={onSubmit}
