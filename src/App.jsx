@@ -6,6 +6,9 @@ import TagManager from 'react-gtm-module'
 const App = () => {
   const tagManagerArgs = {
     gtmId: 'GTM-5SMRF56',
+    events: {
+      sendLoginInfo: 'login',
+    },
   }
 
   TagManager.initialize(tagManagerArgs)
