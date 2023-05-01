@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import main1 from '../assets/main1.png'
-import code from '../assets/code.svg'
 import { useGlobalContext } from '../context/appContext'
 const Home = () => {
   const { user } = useGlobalContext()

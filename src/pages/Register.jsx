@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useGlobalContext } from '../context/appContext'
 import { Navigate } from 'react-router-dom'
-import code from '../assets/code.svg'
 import FormRowS from '../components/FormRowS'
 import SectionContainer from '../components/SectionContainer'
-import { Link } from 'react-router-dom'
-import loginimg from '../assets/loginimg.png'
-import registerimg from '../assets/registerimg.png'
 const Register = () => {
   const [values, setValues] = useState({
     name: '',
