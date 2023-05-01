@@ -66,7 +66,6 @@ const Register = () => {
                   name='name'
                   value={values.name}
                   handleChange={handleChange}
-                  id='register_form'
                 />
               )}
               <FormRowS
