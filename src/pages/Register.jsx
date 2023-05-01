@@ -50,7 +50,7 @@ const Register = () => {
             <form
               className='max-w-[1120px] md:w-[35vw] bg-white rounded-md shadow-md p-[2.5rem] mx-auto my-auto'
               onSubmit={onSubmit}
-              id='login_form'
+              id='login form'
             >
               <div className='h-4 flex items-center justify-center mb-8'>
                 <h2 className='ml-2 text-2xl font-bold'>
