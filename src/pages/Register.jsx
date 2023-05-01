@@ -41,90 +41,74 @@ const Register = () => {
                 there was an error, please try again
               </div>
             )}
-            <div className='grid lg:grid-cols-2 lg:space-x-[250px] place-items-center'>
-              <div className='mx-auto flex-col justify-center lg:py-0 py-8'>
-                {values.isMember ? (
-                  <>
-                    <img
-                      src={loginimg}
-                      alt='login'
-                      className='w-[550px] h-full mx-auto flex justify-center object-cover'
-                      id='login user'
-                    />
-                  </>
-                ) : (
-                  <>
-                    <img
-                      src={registerimg}
-                      alt='register'
-                      className='w-[550px] h-full mx-auto flex justify-center object-cover'
-                      id='register user'
-                    />
-                  </>
-                )}
-              </div>
-              <form
-                className='max-w-[1120px] md:w-[35vw] bg-white rounded-md shadow-md p-[2.5rem] mx-auto my-auto'
-                onSubmit={onSubmit}
-                id='login form'
-              >
-                <div className='h-4 flex items-center justify-center mb-8'>
-                  <h2 className='ml-2 text-2xl font-bold'>
-                    <span className='text-sky-900'>Welcome!</span>
-                  </h2>
-                </div>
-                {values.isMember ? (
-                  <>
-                    <h4 className='text-center text-xl font-bold text-sky-600'>
-                      Login
-                    </h4>
-                  </>
-                ) : (
-                  <>
-                    <h4 className='text-center text-xl font-bold text-sky-600'>
-                      Register
-                    </h4>
-                  </>
-                )}
 
-                {!values.isMember && (
-                  <FormRowS
-                    type='name'
-                    name='name'
-                    value={values.name}
-                    handleChange={handleChange}
-                  />
-                )}
-                <FormRowS
-                  type='email'
-                  name='email'
-                  value={values.email}
-                  handleChange={handleChange}
-                />
-                <FormRowS
-                  type='password'
-                  name='password'
-                  value={values.password}
-                  handleChange={handleChange}
-                />
-                <button
-                  type='submit'
-                  className='mt-4 cursor-pointer text-white bg-sky-700 border-transparent rounded-md py-[0.375rem] px-[0.75rem] shadow-md capitalize inline-block w-[100%] mb-4'
-                >
-                  Submit
-                </button>
-                <p className='m-0 mt-4 text-center'>
-                  {values.isMember ? 'Not a member yet?' : 'Already a member?'}{' '}
-                  <button
-                    type='button'
-                    onClick={toggleMember}
-                    className='bg-transparent border-transparent text-sky-700 cursor-pointer'
+            <form
+              className='max-w-[1120px] md:w-[35vw] bg-white rounded-md shadow-md p-[2.5rem] mx-auto my-auto'
+              onSubmit={onSubmit}
+              id='login form'
+            >
+              <div className='h-4 flex items-center justify-center mb-8'>
+                <h2 className='ml-2 text-2xl font-bold'>
+                  <span className='text-sky-900'>Welcome!</span>
+                </h2>
+              </div>
+              {values.isMember ? (
+                <>
+                  <h4
+                    className='text-center text-xl font-bold text-sky-600'
+                    id='login'
                   >
-                    {values.isMember ? 'Register' : 'Login'}
-                  </button>
-                </p>
-              </form>
-            </div>
+                    Login
+                  </h4>
+                </>
+              ) : (
+                <>
+                  <h4
+                    className='text-center text-xl font-bold text-sky-600 '
+                    id='register'
+                  >
+                    Register
+                  </h4>
+                </>
+              )}
+
+              {!values.isMember && (
+                <FormRowS
+                  type='name'
+                  name='name'
+                  value={values.name}
+                  handleChange={handleChange}
+                />
+              )}
+              <FormRowS
+                type='email'
+                name='email'
+                value={values.email}
+                handleChange={handleChange}
+              />
+              <FormRowS
+                type='password'
+                name='password'
+                value={values.password}
+                handleChange={handleChange}
+              />
+              <button
+                type='submit'
+                className='mt-4 cursor-pointer text-white bg-sky-700 border-transparent rounded-md py-[0.375rem] px-[0.75rem] shadow-md capitalize inline-block w-[100%] mb-4'
+              >
+                Submit
+              </button>
+              <p className='m-0 mt-4 text-center'>
+                {values.isMember ? 'Not a member yet?' : 'Already a member?'}{' '}
+                <button
+                  type='button'
+                  onClick={toggleMember}
+                  className='bg-transparent border-transparent text-sky-700 cursor-pointer'
+                >
+                  {values.isMember ? 'Register' : 'Login'}
+                </button>
+              </p>
+            </form>
           </div>
         </div>
       </SectionContainer>
