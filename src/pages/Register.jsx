@@ -41,7 +41,7 @@ const Register = () => {
                 there was an error, please try again
               </div>
             )}
-            <div className='grid lg:grid-cols-2 lg:space-x-12 place-items-center'>
+            <div className='grid lg:grid-cols-2 lg:space-x-[250px] place-items-center'>
               <div className='mx-auto flex-col justify-center lg:py-0 py-8'>
                 {values.isMember ? (
                   <>
